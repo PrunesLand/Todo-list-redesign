@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_todo_list/routes.dart';
 
 import 'Screens/index.dart';
 
@@ -27,10 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const LoginPage(),
+      routes: routes,
     );
   }
 }
-
-
-
-

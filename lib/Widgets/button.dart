@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final Function? onPressed;
+  final String screen;
   final String title;
 
   const CustomButton({
     Key? key,
-    required this.onPressed,
+    required this.screen,
     required this.title,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(onPressed: () {}, child: Text(title));
+    return TextButton(
+        onPressed: () {
+          Navigator.pushNamed(context, screen);
+        },
+        child: Text(title));
   }
 }

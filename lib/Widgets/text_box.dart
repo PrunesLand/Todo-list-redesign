@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TextBox extends StatelessWidget {
   final bool password;
 
-  TextBox({
+  const TextBox({
     Key? key,
     required this.password,
   }) : super(key: key);
