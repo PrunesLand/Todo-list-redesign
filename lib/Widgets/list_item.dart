@@ -16,11 +16,14 @@ class ListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerLeft,
-      color: const Color.fromRGBO(20, 20, 20, 100),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [Text(title), Text(description), Text(author)],
+        children: [
+          Text(title),
+          Text(description),
+          Text(author),
+        ],
       ),
     );
   }
